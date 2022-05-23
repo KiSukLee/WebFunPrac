@@ -1,0 +1,11 @@
+img{
+    width:50%;
+}
+body{
+    background-position: center;
+    background-color: aquamarine;
+    text-align: center;
+}
+a, table, ul{
+    display: block;
+}

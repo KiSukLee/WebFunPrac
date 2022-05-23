@@ -2,6 +2,14 @@
 <head>
     <meta charset = "utf-8">
     <title>HTML Practice</title>
+    <link rel="stylesheet" href="csspractice.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        $(document).ready(function(){
+            $('h1').click(function(){
+                $('img').hide()
+            })
+        })
+    </script>
 
 </head>
 <body>
@@ -10,27 +18,43 @@
         and it feels like I have wasted most of my time on useless stuff.
         Have found a better way to manage but need to be consistent. 
     </p>
-    <a href= "www.google.com" src= Google>GOOGLE</a>
+    <a href= "https:://www.google.com" src= Google>GOOGLE</a>
     <img src= "horse-galloping-in-grass.jpg" alt= "horse">
     <ul>
         <li>Name: Ki Suk (Albert) Lee</li>
         <li>Age: 20</li>
         <li>Area of Interest: CS</li>
     </ul>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>AoI</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Ki Suk (Albert) Lee</td>
-            <td>20</td>
-            <td>CS</td>
-        </tr>
-    </tbody>
-
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>AoI</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ki Suk (Albert) Lee</td>
+                <td>20</td>
+                <td>CS</td>
+            </tr>
+        </tbody>
+    </table>
+<form>
+    <label for= "first_name">First Name:</label>
+    <input type= "text" id= "first_name" name= "first_name">
+    <label for= "last_name">Last Name:</label>
+    <input type= "text" id="last_name" name= "last_name">
+    <p>Gender:</p>
+    <label for="male">Male</label>
+    <input type="radio" id= "male" name= "Gender" value= "male">
+    <label for= "female">Female</label>
+    <input type="radio" id="female" name="Gender" value="female">
+    <label for="other">Other</label>
+    <input type="radio" id="other" name="Gender" value="other">    
+    <textarea name= "comments">Comments:</textarea>
+    <input type="submit" value="Submit"> 
+</form>
 
 </body>
