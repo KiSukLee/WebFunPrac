@@ -10,7 +10,15 @@
             $(document).on('click','h1',function(){
                 $('p').append("<h1>Dynamic header</h1>");
             });
-            
+            //$('img').click(function(){
+                //$('form').submit();
+            //});
+            //$('form').submit(function(){
+                if($('form.first_name').length <= 1 || $('form.last_name').length <= 1){
+                    alert('First name or last name has to be greater than 1 character');
+                    return false;
+                }
+            //});    
         });
     </script>
 
@@ -44,7 +52,7 @@
             </tr>
         </tbody>
     </table>
-<form>
+<form action= "plottingblocks/plotbloc.html" method= "post">
     <label for= "first_name">First Name:</label>
     <input type= "text" id= "first_name" name= "first_name">
     <label for= "last_name">Last Name:</label>
