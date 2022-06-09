@@ -22,6 +22,7 @@ print(value_removed)
 print(favic.values())
 '''
 #class attributes
+'''
 class User:
     all_accounts = []
     def __init__(self, name, age):
@@ -36,11 +37,16 @@ class User:
             info = info + account.name + " " + str(account.age)
         return info
     #static methods do not have access to either instance or class attributes
-    @staticmethod
-    def 
+
 student = User("Albert", 20)
 print(student.name + str(student.age))
 print(student.get_all_info())
+'''
+#use super. for inheritance
+#modules = file(s); access them with keyword import
+#packages = folder(s)
+#slice with [:]
+
 
 
 
